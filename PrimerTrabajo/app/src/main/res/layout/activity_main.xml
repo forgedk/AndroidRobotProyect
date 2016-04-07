@@ -1,0 +1,318 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:id="@+id/ScrolView">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:id="@+id/LayoutRelativa">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpmegaman">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NombreDaniel"
+        android:id="@+id/Integrante1"
+        android:padding="10dp"
+        android:layout_below="@+id/TituloIntegrantes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EstadoDeConexion"
+        android:id="@+id/EstadoDeConexion"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:layout_below="@+id/CampoDeTextoIngresarIP"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignBaseline="@+id/BotonConexionIP"
+        android:layout_toRightOf="@+id/BotonConexionIP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andres Felipe Sanchez Arango"
+        android:id="@+id/Integrante2"
+        android:padding="10dp"
+        android:layout_below="@+id/Integrante1"
+        android:layout_alignLeft="@+id/Integrante1"
+        android:layout_alignStart="@+id/Integrante1"
+        android:textStyle="italic" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/BotonConexionIP"
+        android:checked="false"
+        android:textOff="@string/TextoConexionIPOff"
+        android:textOn="@string/TextoConexionIPOn"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/CampoDeTextoIngresarIP"
+        android:layout_alignLeft="@+id/BarraDeControl1"
+        android:layout_alignStart="@+id/BarraDeControl1"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/toggle_selector" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BarraDeControl1"
+        android:clickable="true"
+        android:focusable="false"
+        android:longClickable="false"
+        android:indeterminate="false"
+        android:layout_below="@+id/TextoBarra1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:thumb="@drawable/megamanseekbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Control 1:"
+        android:textStyle="bold|italic"
+        android:textColor="#3F51B5"
+        android:id="@+id/TextoBarra1"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/BotonConexionIP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TituloIntegrantes"
+        android:id="@+id/TituloIntegrantes"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:textColor="#3F51B5" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/CampoDeTextoIngresarIP"
+        android:padding="10dp"
+        android:hint="@string/HintIngreseIP"
+        android:layout_below="@+id/Integrante2"
+        android:layout_alignLeft="@+id/BotonConexionIP"
+        android:layout_alignStart="@+id/BotonConexionIP"
+        android:gravity="center"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginRight="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold|italic"
+        android:text="@string/TextoBarra2"
+        android:id="@+id/TextoBarra2"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/BarraDeControl1"
+        android:layout_alignLeft="@+id/TextoBarra1"
+        android:layout_alignStart="@+id/TextoBarra1" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BarraDeControl2"
+        android:clickable="true"
+        android:focusable="false"
+        android:longClickable="false"
+        android:indeterminate="false"
+        android:layout_below="@+id/TextoBarra2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:thumb="@drawable/metalman"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/TextoBarra3"
+        android:textStyle="bold|italic"
+        android:textColor="#3F51B5"
+        android:id="@+id/TextoBarra3"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/BarraDeControl2"
+        android:layout_alignLeft="@+id/TextoBarra2"
+        android:layout_alignStart="@+id/TextoBarra2" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BarraDeControl3"
+        android:clickable="true"
+        android:focusable="false"
+        android:longClickable="false"
+        android:indeterminate="false"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/TextoBarra3"
+        android:layout_alignLeft="@+id/BarraDeControl2"
+        android:layout_alignStart="@+id/BarraDeControl2"
+        android:layout_marginLeft="1dp"
+        android:thumb="@drawable/airman"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BarraDeControl4"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:indeterminate="false"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/TextoBarra4"
+        android:layout_alignLeft="@+id/BarraDeControl3"
+        android:layout_alignStart="@+id/BarraDeControl3"
+        android:thumb="@drawable/crashman"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/TextoBarra4"
+        android:textStyle="bold|italic"
+        android:id="@+id/TextoBarra4"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/BarraDeControl3"
+        android:layout_alignLeft="@+id/TextoBarra3"
+        android:layout_alignStart="@+id/TextoBarra3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/TextoBarra5"
+        android:textStyle="bold|italic"
+        android:textColor="#3F51B5"
+        android:id="@+id/TextoBarra5"
+        android:textSize="20sp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/BarraDeControl4"
+        android:layout_alignLeft="@+id/TextoBarra4"
+        android:layout_alignStart="@+id/TextoBarra4" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BarraDeControl5"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:indeterminate="false"
+        android:layout_below="@+id/TextoBarra5"
+        android:layout_alignLeft="@+id/BarraDeControl4"
+        android:layout_alignStart="@+id/BarraDeControl4"
+        android:layout_marginTop="15dp"
+        android:thumb="@drawable/woodman"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/TextoBarra6"
+        android:textStyle="bold|italic"
+        android:id="@+id/TextoBarra6"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/BarraDeControl5"
+        android:layout_alignLeft="@+id/TextoBarra4"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/BotonConexionIP"
+        android:layout_alignEnd="@+id/BotonConexionIP"
+        android:layout_alignParentLeft="false" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BarraDeControl6"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:indeterminate="false"
+        android:layout_below="@+id/TextoBarra6"
+        android:layout_alignStart="@+id/BarraDeControl4"
+        android:layout_marginTop="15dp"
+        android:thumb="@drawable/sparkman"
+        android:layout_alignParentTop="false"
+        android:layout_alignLeft="@+id/TextoBarra4"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Universidad"
+        android:id="@+id/TituloUniversidad"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/BarraDeControl6"
+        android:layout_toRightOf="@+id/BotonConexionIP"
+        android:textSize="20dp"
+        android:textColor="#ff0f1107"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NombreDeLaSede"
+        android:id="@+id/Sede"
+        android:layout_below="@+id/TituloUniversidad"
+        android:layout_alignLeft="@+id/EstadoDeConexion"
+        android:textColor="#ff110009"
+        android:textSize="20dp"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Curso"
+        android:id="@+id/Curso"
+        android:password="false"
+        android:layout_below="@+id/Sede"
+        android:layout_alignLeft="@+id/Sede"
+        android:layout_margin="1dp" />
+
+</RelativeLayout>
+</ScrollView >

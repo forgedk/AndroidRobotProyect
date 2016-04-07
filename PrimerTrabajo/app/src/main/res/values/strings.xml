@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PrimerTrabajo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="TextoDeLaDescripcionDelRobot">¡ Desplegar Robots!</string>
+    <string name="ValorNumeroDeRobotsDesplegados">Robots Desplegados 0</string>
+    <string name="TextoBarraCambioDeColor">Esta hermosa barra cambia el color del texto de numero de robots</string>
+    <string name="NombreDaniel">Daniel Alejandro Oliveros Duran</string>
+    <string name="TituloIntegrantes">Integrantes:</string>
+    <string name="NombreAndres">Andres felipe sanchez arango</string>
+    <string name="HintIngreseIP">Ingrese en este campo  la IP a conectar</string>
+    <string name="TextoConexionIPOff">Conectar</string>
+    <string name="TextoConexionIPOn">Desconectar</string>
+    <string name="TextoBarra1">Control 1 :</string>
+    <string name="TextoBarra2">Control 2:</string>
+    <string name="TextoBarra3">Control 3:</string>
+    <string name="TextoBarra4">Control 4:</string>
+    <string name="TextoBarra5">Control 5:</string>
+    <string name="EstadoDeConexion">Estado: Desconectado</string>
+    <string name="TextoBarra6" >Control 6:</string>
+    <string name="Universidad">Universidad Nacional de Colombia</string>
+    <string name="NombreDeLaSede">Sede Medellin</string>
+    <string name="Curso">IRI-16</string>
+</resources>
