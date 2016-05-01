@@ -37,6 +37,7 @@ public class MainActivity extends ActionBarActivity {
     private TextView EstadoControl6;
     private TextView NombreDelPrimerIntegrante;
     private TextView NombreDelSegundoIntegrante;
+    private TextView NombreDeLTercerIntegrante;
     private TextView TituloDeLaAplicacion;
     private Typeface FuenteParaLosEstadosDeControl;
     private SeekBarPersonalizado SeekbarPersonalizado1,SeekbarPersonalizado2,SeekbarPersonalizado3,SeekbarPersonalizado4,SeekbarPersonalizado5,SeekbarPersonalizado6,SeekbarPersonalizado7;
@@ -100,25 +101,14 @@ public class MainActivity extends ActionBarActivity {
         BotonConectarIp.setTypeface(FuenteParaLosEstadosDeControl);
     }
 
-
-  public   void AgregarListenerAlBoton(ToggleButton BotonAlQueSeAgregaElComportamiento ,OnClickListener Comportamiento){
-              BotonAlQueSeAgregaElComportamiento.setOnClickListener(Comportamiento);
-            }
-
-    public OnClickListener ComportambientoToggleButtonBotonConetarIP(){
-        return  new View.OnClickListener() {
-            public void onClick(View v) {
-
-                }
-            };
-        }
-
   public void InicarlizarTextViews(){
       FuenteParaLosEstadosDeControl= InstanciarFuente("pixelart.ttf");
       NombreDelPrimerIntegrante=(TextView)findViewById((R.id.Integrante1)) ;
       NombreDelPrimerIntegrante.setTypeface(FuenteParaLosEstadosDeControl);
       NombreDelSegundoIntegrante=(TextView)findViewById((R.id.Integrante2)) ;
       NombreDelSegundoIntegrante.setTypeface(FuenteParaLosEstadosDeControl);
+      NombreDeLTercerIntegrante=(TextView)findViewById((R.id.Integrante3)) ;
+      NombreDeLTercerIntegrante.setTypeface(FuenteParaLosEstadosDeControl);
       TituloDeLaAplicacion=(TextView)findViewById((R.id.TituloIntegrantes)) ;
       TituloDeLaAplicacion.setTypeface(FuenteParaLosEstadosDeControl);
       EstadoDeConexion=(TextView)findViewById((R.id.EstadoDeConexion)) ;
@@ -196,10 +186,6 @@ public class MainActivity extends ActionBarActivity {
              }
          };
      }
-    public void AgregarChangeListenerASeekBar(SeekBar BarraHaAgregar, SeekBar.OnSeekBarChangeListener ComportamientoDeLaBarra){
-                     BarraHaAgregar.setOnSeekBarChangeListener(ComportamientoDeLaBarra);
-
-    }
     public Typeface InstanciarFuente(String NombreDeLaFuenteAInstanciar){
         return Typeface.createFromAsset(getAssets(), NombreDeLaFuenteAInstanciar);
     }
