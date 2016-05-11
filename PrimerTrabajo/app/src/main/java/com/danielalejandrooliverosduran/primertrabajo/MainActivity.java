@@ -131,15 +131,15 @@ public class MainActivity extends ActionBarActivity {
         Control1=(SeekBar)findViewById((R.id.BarraDeControl1)) ;
         Control1.setMax(100);
         Control2=(SeekBar)findViewById((R.id.BarraDeControl2)) ;
-        Control2.setMax(200);
+        Control2.setMax(100);
         Control3=(SeekBar)findViewById((R.id.BarraDeControl3)) ;
-        Control3.setMax(255);
+        Control3.setMax(100);
         Control4=(SeekBar)findViewById((R.id.BarraDeControl4)) ;
-        Control4.setMax(30);
+        Control4.setMax(100);
         Control5=(SeekBar)findViewById((R.id.BarraDeControl5)) ;
-        Control5.setMax(400);
+        Control5.setMax(100);
         Control6=(SeekBar)findViewById((R.id.BarraDeControl6)) ;
-        Control6.setMax(900);
+        Control6.setMax(100);
     }
 
     public void InstanciarComportamientoSeekBars(){
@@ -190,7 +190,7 @@ public class MainActivity extends ActionBarActivity {
         return Typeface.createFromAsset(getAssets(), NombreDeLaFuenteAInstanciar);
     }
     public void mensaje(){
-        byte[] b= {(byte) SeekbarPersonalizado1.getValorDelProgreso(),(byte)SeekbarPersonalizado2.getValorDelProgreso(),(byte)SeekbarPersonalizado3.getValorDelProgreso(),(byte)SeekbarPersonalizado4.getValorDelProgreso(),(byte)SeekbarPersonalizado5.getValorDelProgreso(),(byte)SeekbarPersonalizado6.getValorDelProgreso()};
+        byte[] b= {(byte) 126,(byte) SeekbarPersonalizado1.getValorDelProgreso(),(byte)SeekbarPersonalizado2.getValorDelProgreso(),(byte)SeekbarPersonalizado3.getValorDelProgreso(),(byte)SeekbarPersonalizado4.getValorDelProgreso(),(byte)SeekbarPersonalizado5.getValorDelProgreso()};
         String s="";
         try{
           s= new String(b,"UTF-8")  ;
